@@ -1,12 +1,19 @@
-# 1) Add two strings together that, when concatenated, return your first and last name as your full name in one string.
+# 1) Add two strings together that, when concatenated, return your first and
+#last name as your full name in one string.
 
+"Aaron " + "Sawyer"
 
-
-# 2) Use the modulo operator, division, or a combination of both to take a 4 digit number and find the digit in the:
+# 2) Use the modulo operator, division, or a combination of both to take a 4
+#digit number and find the digit in the:
 # 1) thousands place
+9876 / 1000
 # 2) hundreds place
+9876 % 1000 / 100
 # 3) tens place
+9876 % 9800 / 10
 # 4) ones place
+9876 % 9870
+
 
 
 
