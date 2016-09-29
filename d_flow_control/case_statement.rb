@@ -1,10 +1,14 @@
 a = 5
 
-case a
+# refactored with no case argument
+answer = case
 when 5
-  puts "a is 5"
+  "a is 5"
 when 6
-  puts "a is 6"
+  "a is 6"
 else
-  puts "a is neither 5, nor 6"
+  "a is neither 5, nor 6"
 end
+
+# refactor so we don't use puts so much
+puts answer
