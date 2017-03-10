@@ -1,0 +1,11 @@
+What will the following code print to the screen?
+
+def scream(words)
+  words = words + "!!!!"
+  return
+  puts words
+end
+
+scream("Yippeee")
+
+Because the return keyword is in the middle of the method it will not "puts" the variable words.
