@@ -1,0 +1,3 @@
+What's the major difference between an Array and a Hash?
+
+A hash uses key value pairs while an array uses indices.
