@@ -18,3 +18,26 @@ contact_key.each_with_index do |data_key, index|
 end
 
 puts contacts
+
+# As a bonus, see if you can figure out how to make it work with multiple entries in the contacts hash.
+
+contact_data = [["joe@email.com", "123 Main st.", "555-123-4567"],
+               ["sally@email.com", "404 Not Found Dr.", "123-234-3454"]]
+contact_key = [:email, :address, :phone]
+contacts = {"Joe Smith" => {}, "Sally Johnson" => {}}
+
+
+
+contact_number = 0
+
+contacts.select! do |contact, hash|
+
+  contact_key.each_with_index do |data_key, index|
+     hash[data_key] = contact_data[contact_number][index]
+  end
+  puts contact_number
+  contact_number = contact_number + 1
+
+end
+
+puts contacts
